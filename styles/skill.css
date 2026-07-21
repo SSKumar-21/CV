@@ -1,0 +1,516 @@
+/*==========================
+        SKILL SECTION
+===========================*/
+
+.sskill{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:70px 3%;
+    position:relative;
+}
+
+
+/*==========================
+        LEFT
+===========================*/
+
+.skillLeft{
+
+    width:30%;
+    height:75vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+}
+
+
+/*==========================
+    Selected Skill
+===========================*/
+
+.skillOverview{
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.6);
+
+    border-radius:35px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+
+    padding:35px;
+
+}
+
+
+.skillBadgeNew{
+
+    display:inline-flex;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:black;
+
+    color:white;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+
+.skillOverview h2{
+
+    font-size:2.3rem;
+
+    font-family:"Black Ops One",sans-serif;
+
+    margin-bottom:35px;
+
+}
+
+
+.skillProgressBox{
+
+    margin-top:20px;
+
+}
+
+
+.progressHead{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+
+.skillProgressBar{
+
+    width:100%;
+
+    height:12px;
+
+    background:#d7d7d7;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+
+.skillProgressFill{
+
+    width:90%;
+
+    height:100%;
+
+    background:black;
+
+    border-radius:50px;
+
+    transition:.6s;
+
+}
+
+
+
+/*==========================
+    Skill Buttons
+===========================*/
+
+.skillNavigation{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+    margin-top: 40px;
+    margin-left: 20px;
+    z-index: 1000;
+
+}
+
+
+.skillButton{
+
+    width:75%;
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:60px;
+
+    background:linear-gradient(
+        to bottom,
+        #ffffff,
+        #d5d5d5
+    );
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.skillButton span{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:black;
+
+    transition:.3s;
+
+}
+
+
+.skillButton:hover{
+
+    transform:translateX(12px);
+
+}
+
+
+.activeSkill{
+
+    background:black;
+
+    color:white;
+
+}
+
+
+.activeSkill span{
+
+    background:white;
+
+}
+
+
+
+/*==========================
+        RIGHT
+===========================*/
+
+.skillRight{
+
+    width:30%;
+
+    height:75vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    gap: 40px;
+
+    z-index: 1000;
+}
+
+
+
+/*==========================
+    Technology Chips
+===========================*/
+
+.technologyPanel{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+
+#technologyList{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:flex-end;
+
+    gap:18px;
+
+}
+
+
+#technologyList span{
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    border:2px solid black;
+
+    background:rgba(255,255,255,.5);
+
+    backdrop-filter:blur(20px);
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+
+#technologyList span:hover{
+
+    background:black;
+
+    color:white;
+
+}
+
+
+
+/*==========================
+        PROJECT CARD
+===========================*/
+
+.projectCard{
+
+    width:100%;
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(18px);
+
+    border-radius:40px;
+
+    border:1px solid rgba(255,255,255,.7);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+
+    padding:30px;
+
+}
+
+
+.projectHeader h2{
+
+    font-family:"Black Ops One";
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+
+.projectImage{
+
+    width:180px;
+
+    height:180px;
+
+    margin:auto;
+
+    border-radius:35px;
+
+    overflow:hidden;
+
+
+
+}
+
+
+.projectImage img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+    border: none;
+    background: transparent;
+
+}
+
+
+#projectDescription{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    color:#444;
+
+    line-height:1.5;
+
+}
+
+
+
+/*==========================
+        BUTTONS
+===========================*/
+
+.projectButtons{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:15px;
+
+    margin-top:30px;
+
+
+}
+
+
+.projectButtons a{
+
+    flex:1;
+
+    height:55px;
+
+    border-radius:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s;
+    
+
+}
+
+
+.visitProject{
+
+    background:#d8d8d8;
+
+    color:black;
+
+    border:3px solid black;
+
+}
+
+
+.visitProject:hover{
+
+    background:black;
+
+    color:white;
+
+}
+
+
+.githubProject{
+
+    background:black;
+
+    color:white;
+
+    gap:12px;
+
+}
+
+
+.githubProject:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+.githubProject svg{
+
+    width:24px;
+
+    height:24px;
+
+}
+
+
+
+/*==========================
+        FLOAT EFFECT
+===========================*/
+
+.projectCard,
+.skillOverview{
+
+    animation:floatPanel 5s ease-in-out infinite;
+
+}
+
+
+@keyframes floatPanel{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+#technologyList .projectTag{
+    cursor: pointer;
+    transition: .3s;
+}
+
+#technologyList .activeProject{
+    background: #111;
+    color: #fff;
+    border-color: #111;
+}

@@ -1,0 +1,1126 @@
+/*======================================================
+                    EXPERIENCE SECTION
+======================================================*/
+
+#experience{
+
+    width:100%;
+    /* min-height:100vh; */
+
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+
+    padding:90px 6%;
+
+    position:relative;
+
+}
+
+
+
+/*======================================================
+                    CONTAINER
+======================================================*/
+
+#experience .skillsContainer{
+
+    width:56%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    
+
+}
+
+
+
+/*======================================================
+                    HEADER
+======================================================*/
+
+#experience .skillsHeader{
+
+    width:100%;
+
+}
+
+#experience .skillsHeader h2{
+
+    font-family:"Black Ops One",sans-serif;
+
+    font-size:3.4rem;
+
+    color:#111;
+
+    margin-bottom:18px;
+
+}
+
+#experience .skillsHeader p{
+
+    max-width:600px;
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+
+
+/*======================================================
+                    MAIN PANEL
+======================================================*/
+
+#experience .skillPanel{
+
+    width:100%;
+
+    min-height:420px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:40px;
+
+    border-radius:35px;
+
+    background:rgba(255,255,255,.55);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.45);
+
+    box-shadow:
+
+        0 15px 45px rgba(0,0,0,.12);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+/*======================================================
+                    LEFT SIDE
+======================================================*/
+
+#experience .panelLeft{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    z-index:2;
+
+}
+
+
+
+/*======================================================
+                    BADGE
+======================================================*/
+
+#experience .skillBadge{
+
+    display:inline-flex;
+
+    width:max-content;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:#111;
+
+    color:white;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+}
+
+
+
+/*======================================================
+                    TITLE
+======================================================*/
+
+#experience #experienceTitle{
+
+    font-family:"Black Ops One";
+
+    font-size:2.5rem;
+
+    color:#111;
+
+    line-height:1.2;
+
+}
+
+
+
+/*======================================================
+                    COMPANY
+======================================================*/
+
+#experience #experienceCompany{
+
+    font-size:1.25rem;
+
+    color:#555;
+
+    font-weight:600;
+
+}
+
+
+
+/*======================================================
+                    DESCRIPTION
+======================================================*/
+
+#experience #experienceDescription{
+
+    line-height:1.8;
+
+    color:#555;
+
+    font-size:.98rem;
+
+}
+
+
+
+/*======================================================
+                    TAGS
+======================================================*/
+
+#experience .techStack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:10px;
+
+}
+
+
+
+#experience .techStack span{
+
+    padding:10px 18px;
+
+    border-radius:40px;
+
+    background:white;
+
+    border:2px solid #111;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+
+#experience .techStack span:hover{
+
+    background:#111;
+
+    color:white;
+
+}
+
+
+
+/*======================================================
+                    PROGRESS
+======================================================*/
+
+#experience .skillLevel{
+
+    margin-top:15px;
+
+}
+
+
+
+#experience .levelHeader{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:#444;
+
+}
+
+
+
+#experience .progressBar{
+
+    width:100%;
+
+    height:10px;
+
+    background:#ddd;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+
+
+#experience .progress{
+
+    height:100%;
+
+    background:#111;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+}
+
+
+
+/*======================================================
+                    STATS
+======================================================*/
+
+#experience .skillStats div{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 18px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(0,0,0,.08);
+
+    box-shadow:
+        0 8px 18px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+}
+
+
+
+#experience .skillStats div{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    text-align:center;
+
+    box-shadow:
+
+        0 10px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+#experience .skillStats h4{
+
+    font-size:1.25rem;
+
+    margin-bottom:6px;
+
+    color:#111;
+
+}
+
+
+
+#experience .skillStats span{
+
+    color:#666;
+
+    font-size:.9rem;
+
+}
+
+/*======================================================
+                    RIGHT PANEL
+======================================================*/
+
+#experience .panelRight{
+
+    width:35%;
+
+    height:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+
+/*======================================================
+                FLOATING CIRCLES
+======================================================*/
+
+#experience .floatingCircle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.28);
+
+    animation:circleFloat 8s ease-in-out infinite;
+
+}
+
+
+
+#experience .circle1{
+
+    width:170px;
+
+    height:170px;
+
+    top:20px;
+
+    right:15px;
+
+}
+
+
+
+#experience .circle2{
+
+    width:90px;
+
+    height:90px;
+
+    bottom:40px;
+
+    left:15px;
+
+    animation-delay:2s;
+
+}
+
+
+
+/*======================================================
+                LOGO CARD
+======================================================*/
+
+#experience #experienceLogo{
+
+    width:170px;
+
+    height:170px;
+
+    background:rgba(255,255,255,.85);
+
+    backdrop-filter:blur(25px);
+
+    border-radius:28px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    position:relative;
+
+    z-index:5;
+
+    border:1px solid rgba(255,255,255,.5);
+
+    box-shadow:
+
+        0 20px 45px rgba(0,0,0,.12);
+
+    transition:.45s;
+
+}
+
+
+
+#experience #experienceLogo:hover{
+
+    transform:translateY(-8px) scale(1.04);
+
+    box-shadow:
+
+        0 30px 60px rgba(0,0,0,.16);
+
+}
+
+
+
+/*======================================================
+                LOGO IMAGE
+======================================================*/
+
+#experience #experienceLogoImg{
+
+    width:65%;
+
+    height:65%;
+
+    object-fit:contain;
+
+    transition:.45s;
+
+}
+
+
+
+#experience #experienceLogo:hover #experienceLogoImg{
+
+    transform:scale(1.08);
+
+}
+
+
+
+/*======================================================
+                GLASS REFLECTION
+======================================================*/
+
+#experience #experienceLogo::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:12px;
+
+    left:12px;
+
+    right:12px;
+
+    height:35px;
+
+    border-radius:18px;
+
+    background:linear-gradient(
+
+        to bottom,
+
+        rgba(255,255,255,.55),
+
+        transparent
+
+    );
+
+}
+
+
+
+#experience #experienceLogo::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.35);
+
+}
+
+
+
+/*======================================================
+                PANEL GLOW
+======================================================*/
+
+#experience .skillPanel::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.18);
+
+    filter:blur(70px);
+
+    right:-120px;
+
+    top:-100px;
+
+}
+
+
+
+#experience .skillPanel::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.12);
+
+    filter:blur(70px);
+
+    left:-100px;
+
+    bottom:-100px;
+
+}
+
+
+
+/*======================================================
+                CARD ANIMATION
+======================================================*/
+
+#experience .skillPanel{
+
+    animation:panelUp .8s ease;
+
+}
+
+
+
+@keyframes panelUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/*======================================================
+                LOGO FLOAT
+======================================================*/
+
+@keyframes circleFloat{
+
+    0%,100%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+}
+
+/*======================================================
+                    TIMELINE
+======================================================*/
+
+#experience .skillsNav{
+
+    width:100%;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    z-index: 1000;
+
+    margin: 40px;
+
+}
+
+
+
+/*======================================================
+                    BUTTON
+======================================================*/
+
+#experience .navItem{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:14px 22px;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.75);
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+
+        0 10px 25px rgba(0,0,0,.08);
+
+    color:#444;
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+/*======================================================
+                    DOT
+======================================================*/
+
+#experience .navItem span{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#c9c9c9;
+
+    transition:.35s;
+
+}
+
+
+
+/*======================================================
+                ACTIVE BUTTON
+======================================================*/
+
+#experience .navItem.active{
+
+    background:#111;
+
+    color:white;
+
+}
+
+
+
+#experience .navItem.active span{
+
+    background:white;
+
+}
+
+
+
+/*======================================================
+                    HOVER
+======================================================*/
+
+#experience .navItem:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+        0 18px 35px rgba(0,0,0,.14);
+
+}
+
+
+
+#experience .navItem:hover span{
+
+    background:#111;
+
+}
+
+
+
+#experience .navItem.active:hover span{
+
+    background:white;
+
+}
+
+
+
+/*======================================================
+                SHINE EFFECT
+======================================================*/
+
+#experience .navItem::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:60%;
+
+    height:100%;
+
+    transform:skewX(-25deg);
+
+    background:rgba(255,255,255,.28);
+
+    transition:.7s;
+
+}
+
+
+
+#experience .navItem:hover::before{
+
+    left:140%;
+
+}
+
+
+
+/*======================================================
+                TAG ANIMATION
+======================================================*/
+
+#experience .techStack span{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+#experience .techStack span::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-120%;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        120deg,
+
+        transparent,
+
+        rgba(255,255,255,.35),
+
+        transparent
+
+    );
+
+    transition:.6s;
+
+}
+
+
+
+#experience .techStack span:hover::after{
+
+    left:120%;
+
+}
+
+
+
+/*======================================================
+                STATS HOVER
+======================================================*/
+
+#experience .skillStats div{
+
+    transition:.35s;
+
+}
+
+
+#experience .skillStats h4{
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    color:#111;
+
+    line-height:1;
+
+    margin:0;
+
+}
+
+
+
+/*======================================================
+                ENTRY ANIMATION
+======================================================*/
+
+#experience .skillsHeader{
+
+    animation:expFade .7s ease;
+
+}
+
+#experience .skillPanel{
+
+    animation:expFade .8s ease;
+
+}
+
+#experience .skillsNav{
+
+    animation:expFade .9s ease;
+
+}
+
+
+
+@keyframes expFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+#experience .skillStats span{
+
+
+
+    display:block;
+
+
+
+    font-size:.75rem;
+
+
+
+    color:#777;
+
+
+
+    margin-top:3px;
+
+
+
+}
+
+#experience .skillStats h4{
+
+
+
+    font-size:1rem;
+
+
+
+    font-weight:700;
+
+
+
+    color:#111;
+
+
+
+    line-height:1;
+
+
+
+    margin:0;
+
+
+
+}
+
+#experience .skillStats div:hover{
+
+
+
+    transform:translateY(-4px);
+
+
+
+    box-shadow:
+
+        0 15px 30px rgba(0,0,0,.12);
+
+
+
+}
+
+ #experience .skillStats{
+
+
+
+    display:flex;
+
+
+
+    gap:14px;
+
+
+
+    margin-top:18px;
+
+
+
+}
+
+#experience .skillStats div{
+
+
+
+    flex:1;
+
+
+
+    display:flex;
+
+
+
+    align-items:center;
+
+
+
+    gap:12px;
+
+
+
+    padding:14px 18px;
+
+
+
+    border-radius:50px;
+
+
+
+    background:rgba(255,255,255,.75);
+
+
+
+    backdrop-filter:blur(15px);
+
+
+
+    border:1px solid rgba(0,0,0,.08);
+
+
+
+    box-shadow:
+
+        0 8px 18px rgba(0,0,0,.06);
+
+
+
+    transition:.35s;
+
+
+
+}
