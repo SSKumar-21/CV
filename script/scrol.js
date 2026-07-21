@@ -26,3 +26,22 @@ window.addEventListener("scroll", () => {
     }, 150);
 
 });
+
+
+
+
+window.addEventListener("load", () => {
+
+    const sound = new Audio("./assets/intro.mp3"); 
+
+    setTimeout(() => {
+        sound.play()
+            .then(() => {
+                console.log("Sound played successfully.");
+            })
+            .catch((error) => {
+                console.error("Unable to play sound:", error);
+            });
+    }, 2000);
+
+});
