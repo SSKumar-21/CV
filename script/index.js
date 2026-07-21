@@ -166,7 +166,7 @@ const experiences = {
         year:"Present",
 
         logo:"./assets/ba.jpg",
-        
+
 
     },
 

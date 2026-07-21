@@ -1,0 +1,483 @@
+/*=========================================================
+                    CONTACT
+=========================================================*/
+
+.contact{
+    width:100%;
+    min-height:100vh;
+    background:
+    radial-gradient(circle at center,
+    rgba(255,90,0,.10) 0%,
+    rgba(255,90,0,.04) 22%,
+    transparent 45%),
+    linear-gradient(180deg,#050505,#090909);
+
+    position:relative;
+    overflow:hidden;
+
+    display:grid;
+    grid-template-columns:28% 44% 28%;
+    align-items:center;
+
+    padding:0 7%;
+}
+
+
+/* ================= LEFT ================= */
+
+.contactLeft{
+
+    grid-column:1;
+
+    max-width:340px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    gap:22px;
+
+    z-index:1000;
+
+}
+
+.contactLeft .eyebrow{
+
+    color:#ff8a00;
+    letter-spacing:3px;
+    font-size:.85rem;
+    text-transform:uppercase;
+
+}
+
+.contactLeft h2{
+
+    font-size:4.3rem;
+    line-height:.98;
+    color:#fff;
+    font-weight:800;
+
+    text-shadow:
+    0 0 30px rgba(255,100,0,.18);
+
+}
+
+.contactLeft p{
+
+    color:#b7b7b7;
+    line-height:1.9;
+    font-size:1rem;
+
+}
+
+.contactLeft .btn{
+
+    width:max-content;
+    padding:16px 34px;
+
+    background:linear-gradient(
+    135deg,
+    #ff8f00,
+    #ff3d00);
+
+    color:#fff;
+
+    box-shadow:
+    0 0 25px rgba(255,90,0,.35);
+
+}
+
+.contactLeft .btn:hover{
+
+    box-shadow:
+    0 0 40px rgba(255,120,0,.55);
+
+}
+
+
+/* ================= RIGHT ================= */
+
+.contactRight{
+
+    grid-column:3;
+
+    justify-self:end;
+
+    width:100%;
+    max-width:320px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:35px;
+
+    z-index:5;
+
+}
+
+.contactRight h4{
+
+    color:#fff;
+
+    letter-spacing:3px;
+    text-transform:uppercase;
+
+    font-size:.9rem;
+
+}
+
+
+/* Contact cards */
+
+.contactCard{
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.35s;
+
+    backdrop-filter:blur(12px);
+
+}
+
+.contactCard:hover{
+
+    transform:translateX(-8px);
+
+    border-color:#ff6b00;
+
+    box-shadow:
+    0 0 35px rgba(255,90,0,.18);
+
+}
+
+.contactCard span{
+
+    display:block;
+
+    color:#777;
+
+    font-size:.8rem;
+
+    margin-bottom:6px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+}
+
+.contactCard a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:1rem;
+
+}
+
+.contactCard a:hover{
+
+    color:#ff9a3d;
+
+}
+
+
+/* ================= SOCIALS ================= */
+
+.contactBottom{
+
+    position:absolute;
+
+    bottom:45px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    gap:22px;
+
+    z-index:5;
+
+}
+
+.contactBottom a{
+
+    width:54px;
+
+    height:54px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.contactBottom a:hover{
+
+    background:#ff6b00;
+
+    border-color:#ff6b00;
+
+    transform:translateY(-6px);
+
+    box-shadow:
+    0 0 30px rgba(255,107,0,.45);
+
+}
+
+
+/* ================= Background ================= */
+
+.contact::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,
+    rgba(255,120,0,.12),
+    transparent 65%);
+
+    filter:blur(90px);
+
+    pointer-events:none;
+
+}
+
+.contact::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(90deg,
+    #050505 0%,
+    transparent 22%,
+    transparent 78%,
+    #050505 100%);
+
+    pointer-events:none;
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:1000px){
+
+.contact{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:60px;
+
+    padding:120px 30px;
+
+}
+
+.contactLeft,
+.contactRight{
+
+    max-width:500px;
+    width:100%;
+    text-align:center;
+    align-items:center;
+
+}
+
+.contactLeft h2{
+
+    font-size:3rem;
+
+}
+
+.contactBottom{
+
+    position:relative;
+    bottom:auto;
+    left:auto;
+    transform:none;
+
+}
+
+}
+
+/*==========================
+    RIGHT SIDE
+===========================*/
+
+.contactRight{
+
+    grid-column:3;
+
+    justify-self:end;
+
+    width:100%;
+    max-width:360px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:18px;
+
+    z-index:1000;
+
+}
+
+.contactRight h4{
+
+    color:#fff;
+
+    font-size:1rem;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    margin-bottom:8px;
+
+}
+
+
+/* Contact Card */
+
+.contactCard{
+
+    padding:18px 22px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    backdrop-filter:blur(16px);
+
+    transition:.35s ease;
+
+}
+
+.contactCard:hover{
+
+    transform:translateX(-8px);
+
+    border-color:#ff6b00;
+
+    background:rgba(255,107,0,.08);
+
+    box-shadow:
+        0 0 30px rgba(255,107,0,.18);
+
+}
+
+
+/* Heading */
+
+.contactCard span{
+
+    display:block;
+
+    color:#ff8a00;
+
+    font-size:.78rem;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+
+/* Link */
+
+.contactCard a{
+
+    color:#f3f3f3;
+
+    text-decoration:none;
+
+    font-size:.95rem;
+
+    word-break:break-word;
+
+    transition:.3s;
+
+}
+
+.contactCard a:hover{
+
+    color:#ffb347;
+
+}
+
+
+/* Mobile */
+
+@media (max-width:1000px){
+
+    .contactRight{
+
+        max-width:500px;
+
+        justify-self:center;
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
+    .contactCard{
+
+        width:100%;
+
+    }
+
+}
+
+a{
+    text-decoration: none;
+}

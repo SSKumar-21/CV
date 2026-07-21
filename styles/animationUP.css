@@ -1,19 +1,23 @@
-#Ani_UP{
+/*=========================================================
+    REVEAL ON LOAD / SCROLL
+    (applies to any element with class="reveal-up")
+=========================================================*/
+
+.reveal-up{
     opacity:0;
-    transform:translateY(60px);
-    filter:blur(8px);
+    transform:translateY(50px);
+    filter:blur(6px);
 
-    animation:fadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
-
-    animation-delay:1s;
+    animation:fadeUp .9s cubic-bezier(.22,1,.36,1) forwards;
+    animation-delay:.2s;
 }
 
 @keyframes fadeUp{
 
     0%{
         opacity:0;
-        transform:translateY(60px);
-        filter:blur(8px);
+        transform:translateY(50px);
+        filter:blur(6px);
     }
 
     60%{
@@ -25,6 +29,17 @@
         opacity:1;
         transform:translateY(0);
         filter:blur(0);
+    }
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+    .reveal-up{
+        animation:none;
+        opacity:1;
+        transform:none;
+        filter:none;
     }
 
 }

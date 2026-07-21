@@ -5,18 +5,16 @@
 #experience{
 
     width:100%;
-    /* min-height:100vh; */
 
     display:flex;
     justify-content:flex-start;
     align-items:center;
 
-    padding:90px 6%;
+    padding:120px 6%;
 
     position:relative;
 
 }
-
 
 
 /*======================================================
@@ -31,10 +29,7 @@
 
     flex-direction:column;
 
-    
-
 }
-
 
 
 /*======================================================
@@ -44,28 +39,29 @@
 #experience .skillsHeader{
 
     width:100%;
+    margin-bottom:10px;
 
 }
 
 #experience .skillsHeader h2{
 
-    font-family:"Black Ops One",sans-serif;
+    font-size:3rem;
 
-    font-size:3.4rem;
+    font-weight:700;
 
-    color:#111;
+    color:var(--accent);
 
-    margin-bottom:18px;
+    margin-bottom:16px;
 
 }
 
 #experience .skillsHeader p{
 
-    max-width:600px;
+    max-width:560px;
 
     line-height:1.8;
 
-    color:#666;
+    color:var(--ink);
 
 }
 
@@ -87,26 +83,37 @@
 
     align-items:center;
 
-    padding:40px;
+    gap:20px;
 
-    border-radius:35px;
+    padding:44px;
 
-    background:rgba(255,255,255,.55);
+    margin-top:30px;
 
-    backdrop-filter:blur(20px);
+    border-radius:var(--radius-lg);
 
-    border:1px solid rgba(255,255,255,.45);
+    background:var(--surface-glass);
 
-    box-shadow:
+    backdrop-filter:blur(22px);
 
-        0 15px 45px rgba(0,0,0,.12);
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.5);
+
+    box-shadow:var(--shadow-md);
 
     position:relative;
 
     overflow:hidden;
 
+    transition:.45s var(--ease);
+
 }
 
+#experience .skillPanel:hover{
+
+    box-shadow:var(--shadow-lg);
+
+}
 
 
 /*======================================================
@@ -139,17 +146,25 @@
 
     width:max-content;
 
+}
+
+#experience #experienceType{
+
     padding:8px 18px;
 
-    border-radius:50px;
+    border-radius:var(--radius-pill);
 
-    background:#111;
+    background:var(--ink);
 
-    color:white;
+    color:#fff;
 
-    font-size:.8rem;
+    font-family:var(--font-mono);
 
-    font-weight:600;
+    font-size:.76rem;
+
+    font-weight:500;
+
+    letter-spacing:.03em;
 
 }
 
@@ -161,11 +176,11 @@
 
 #experience #experienceTitle{
 
-    font-family:"Black Ops One";
+    font-size:2.1rem;
 
-    font-size:2.5rem;
+    font-weight:700;
 
-    color:#111;
+    color:var(--ink);
 
     line-height:1.2;
 
@@ -179,11 +194,11 @@
 
 #experience #experienceCompany{
 
-    font-size:1.25rem;
+    font-size:1.1rem;
 
-    color:#555;
+    color:var(--ink-soft);
 
-    font-weight:600;
+    font-weight:500;
 
 }
 
@@ -197,9 +212,11 @@
 
     line-height:1.8;
 
-    color:#555;
+    color:var(--ink-soft);
 
-    font-size:.98rem;
+    font-size:.96rem;
+
+    max-width:560px;
 
 }
 
@@ -215,9 +232,9 @@
 
     flex-wrap:wrap;
 
-    gap:12px;
+    gap:10px;
 
-    margin-top:10px;
+    margin-top:6px;
 
 }
 
@@ -225,19 +242,25 @@
 
 #experience .techStack span{
 
-    padding:10px 18px;
+    padding:9px 17px;
 
-    border-radius:40px;
+    border-radius:var(--radius-pill);
 
-    background:white;
+    background:#000;
 
-    border:2px solid #111;
+    border:1px solid var(--border-strong);
 
-    font-size:.9rem;
+    font-family:var(--font-mono);
 
-    font-weight:600;
+    font-size:.8rem;
 
-    transition:.3s;
+    color:var(--ink-soft);
+
+    position:relative;
+
+    overflow:hidden;
+
+    transition:.3s var(--ease);
 
 }
 
@@ -245,9 +268,11 @@
 
 #experience .techStack span:hover{
 
-    background:#111;
+    background:var(--ink);
 
-    color:white;
+    color:#fff;
+
+    border-color:var(--ink);
 
 }
 
@@ -259,7 +284,8 @@
 
 #experience .skillLevel{
 
-    margin-top:15px;
+    margin-top:8px;
+    max-width:560px;
 
 }
 
@@ -273,9 +299,11 @@
 
     margin-bottom:10px;
 
-    font-weight:600;
+    font-family:var(--font-mono);
 
-    color:#444;
+    font-size:.82rem;
+
+    color:var(--muted);
 
 }
 
@@ -285,11 +313,11 @@
 
     width:100%;
 
-    height:10px;
+    height:8px;
 
-    background:#ddd;
+    background:rgba(16,17,20,.08);
 
-    border-radius:50px;
+    border-radius:var(--radius-pill);
 
     overflow:hidden;
 
@@ -301,11 +329,11 @@
 
     height:100%;
 
-    background:#111;
+    border-radius:var(--radius-pill);
 
-    border-radius:50px;
+    background:linear-gradient(90deg,var(--accent),var(--ink));
 
-    transition:.4s;
+    transition:width .6s var(--ease);
 
 }
 
@@ -315,72 +343,69 @@
                     STATS
 ======================================================*/
 
+#experience .skillStats{
+
+    display:flex;
+
+    gap:14px;
+
+    margin-top:8px;
+
+}
+
 #experience .skillStats div{
 
     flex:1;
 
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    padding:14px 18px;
-
-    border-radius:50px;
-
-    background:rgba(255,255,255,.75);
-
-    backdrop-filter:blur(15px);
-
-    border:1px solid rgba(0,0,0,.08);
-
-    box-shadow:
-        0 8px 18px rgba(0,0,0,.06);
-
-    transition:.35s;
-
-}
-
-
-
-#experience .skillStats div{
-
-    background:white;
-
-    border-radius:18px;
+    text-align:center;
 
     padding:18px;
 
-    text-align:center;
+    border-radius:var(--radius-md);
 
-    box-shadow:
+    background:#fff;
 
-        0 10px 20px rgba(0,0,0,.08);
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.35s var(--ease);
 
 }
 
+#experience .skillStats div:hover{
 
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-md);
+
+}
 
 #experience .skillStats h4{
 
-    font-size:1.25rem;
+    font-size:1.05rem;
 
-    margin-bottom:6px;
+    font-weight:700;
 
-    color:#111;
+    color:var(--ink);
+
+    line-height:1;
+
+    margin-bottom:5px;
 
 }
-
-
 
 #experience .skillStats span{
 
-    color:#666;
+    display:block;
 
-    font-size:.9rem;
+    color:var(--muted);
+
+    font-size:.76rem;
 
 }
+
+
 
 /*======================================================
                     RIGHT PANEL
@@ -388,9 +413,11 @@
 
 #experience .panelRight{
 
-    width:35%;
+    width:34%;
 
     height:100%;
+
+    min-height:260px;
 
     display:flex;
 
@@ -418,7 +445,7 @@
 
     backdrop-filter:blur(20px);
 
-    background:rgba(255,255,255,.28);
+    background:var(--accent-soft);
 
     animation:circleFloat 8s ease-in-out infinite;
 
@@ -466,11 +493,11 @@
 
     height:170px;
 
-    background:rgba(255,255,255,.85);
+    background:rgba(255,255,255,.9);
 
     backdrop-filter:blur(25px);
 
-    border-radius:28px;
+    border-radius:var(--radius-md);
 
     display:flex;
 
@@ -482,13 +509,11 @@
 
     z-index:5;
 
-    border:1px solid rgba(255,255,255,.5);
+    border:1px solid rgba(255,255,255,.6);
 
-    box-shadow:
+    box-shadow:var(--shadow-md);
 
-        0 20px 45px rgba(0,0,0,.12);
-
-    transition:.45s;
+    transition:.45s var(--ease);
 
 }
 
@@ -498,9 +523,7 @@
 
     transform:translateY(-8px) scale(1.04);
 
-    box-shadow:
-
-        0 30px 60px rgba(0,0,0,.16);
+    box-shadow:var(--shadow-lg);
 
 }
 
@@ -512,13 +535,13 @@
 
 #experience #experienceLogoImg{
 
-    width:65%;
+    width:62%;
 
-    height:65%;
+    height:62%;
 
     object-fit:contain;
 
-    transition:.45s;
+    transition:.45s var(--ease);
 
 }
 
@@ -556,27 +579,11 @@
 
         to bottom,
 
-        rgba(255,255,255,.55),
+        rgba(255,255,255,.6),
 
         transparent
 
     );
-
-}
-
-
-
-#experience #experienceLogo::after{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    border-radius:28px;
-
-    border:1px solid rgba(255,255,255,.35);
 
 }
 
@@ -598,7 +605,7 @@
 
     border-radius:50%;
 
-    background:rgba(255,255,255,.18);
+    background:rgba(255,255,255,.25);
 
     filter:blur(70px);
 
@@ -622,7 +629,7 @@
 
     border-radius:50%;
 
-    background:rgba(255,255,255,.12);
+    background:var(--accent-soft);
 
     filter:blur(70px);
 
@@ -633,60 +640,6 @@
 }
 
 
-
-/*======================================================
-                CARD ANIMATION
-======================================================*/
-
-#experience .skillPanel{
-
-    animation:panelUp .8s ease;
-
-}
-
-
-
-@keyframes panelUp{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
-}
-
-
-
-/*======================================================
-                LOGO FLOAT
-======================================================*/
-
-@keyframes circleFloat{
-
-    0%,100%{
-
-        transform:translateY(0px);
-
-    }
-
-    50%{
-
-        transform:translateY(-18px);
-
-    }
-
-}
 
 /*======================================================
                     TIMELINE
@@ -700,11 +653,12 @@
 
     flex-wrap:wrap;
 
-    gap:15px;
+    gap:12px;
 
-    z-index: 1000;
+    margin-top:36px;
 
-    margin: 40px;
+    z-index:1000;
+    position:relative;
 
 }
 
@@ -720,9 +674,9 @@
 
     align-items:center;
 
-    gap:12px;
+    gap:11px;
 
-    padding:14px 22px;
+    padding:13px 22px;
 
     border:none;
 
@@ -730,23 +684,21 @@
 
     cursor:pointer;
 
-    border-radius:50px;
+    border-radius:var(--radius-pill);
 
-    background:rgba(255,255,255,.75);
+    background:rgba(0, 0, 0, 0.8);
 
     backdrop-filter:blur(18px);
 
-    box-shadow:
+    box-shadow:var(--shadow-sm);
 
-        0 10px 25px rgba(0,0,0,.08);
+    color:var(--ink-soft);
 
-    color:#444;
+    font-size:.86rem;
 
-    font-size:.92rem;
+    font-weight:500;
 
-    font-weight:600;
-
-    transition:.35s;
+    transition:.35s var(--ease);
 
     position:relative;
 
@@ -762,15 +714,17 @@
 
 #experience .navItem span{
 
-    width:10px;
+    width:8px;
 
-    height:10px;
+    height:8px;
 
     border-radius:50%;
 
     background:#c9c9c9;
 
-    transition:.35s;
+    transition:.35s var(--ease);
+
+    flex-shrink:0;
 
 }
 
@@ -782,9 +736,9 @@
 
 #experience .navItem.active{
 
-    background:#111;
+    background:var(--accent);
 
-    color:white;
+    color:#fff;
 
 }
 
@@ -792,7 +746,7 @@
 
 #experience .navItem.active span{
 
-    background:white;
+    background:var(--ink);
 
 }
 
@@ -804,11 +758,11 @@
 
 #experience .navItem:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-4px);
 
-    box-shadow:
+    box-shadow:var(--shadow-md);
 
-        0 18px 35px rgba(0,0,0,.14);
+    color:var(--ink);
 
 }
 
@@ -816,132 +770,15 @@
 
 #experience .navItem:hover span{
 
-    background:#111;
+    background:var(--accent);
 
 }
 
 
 
-#experience .navItem.active:hover span{
+#experience .navItem.active:hover{
 
-    background:white;
-
-}
-
-
-
-/*======================================================
-                SHINE EFFECT
-======================================================*/
-
-#experience .navItem::before{
-
-    content:"";
-
-    position:absolute;
-
-    left:-120%;
-
-    top:0;
-
-    width:60%;
-
-    height:100%;
-
-    transform:skewX(-25deg);
-
-    background:rgba(255,255,255,.28);
-
-    transition:.7s;
-
-}
-
-
-
-#experience .navItem:hover::before{
-
-    left:140%;
-
-}
-
-
-
-/*======================================================
-                TAG ANIMATION
-======================================================*/
-
-#experience .techStack span{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-
-#experience .techStack span::after{
-
-    content:"";
-
-    position:absolute;
-
-    left:-120%;
-
-    top:0;
-
-    width:100%;
-
-    height:100%;
-
-    background:linear-gradient(
-
-        120deg,
-
-        transparent,
-
-        rgba(255,255,255,.35),
-
-        transparent
-
-    );
-
-    transition:.6s;
-
-}
-
-
-
-#experience .techStack span:hover::after{
-
-    left:120%;
-
-}
-
-
-
-/*======================================================
-                STATS HOVER
-======================================================*/
-
-#experience .skillStats div{
-
-    transition:.35s;
-
-}
-
-
-#experience .skillStats h4{
-
-    font-size:1rem;
-
-    font-weight:700;
-
-    color:#111;
-
-    line-height:1;
-
-    margin:0;
+    color:#fff;
 
 }
 
@@ -951,25 +788,13 @@
                 ENTRY ANIMATION
 ======================================================*/
 
-#experience .skillsHeader{
-
-    animation:expFade .7s ease;
-
-}
-
-#experience .skillPanel{
-
-    animation:expFade .8s ease;
-
-}
-
+#experience .skillsHeader,
+#experience .skillPanel,
 #experience .skillsNav{
 
-    animation:expFade .9s ease;
+    animation:expFade .8s var(--ease);
 
 }
-
-
 
 @keyframes expFade{
 
@@ -991,136 +816,73 @@
 
 }
 
-#experience .skillStats span{
 
+/*======================================================
+                    RESPONSIVE
+======================================================*/
 
+@media(max-width:1200px){
 
-    display:block;
+    #experience .skillsContainer{
 
+        width:90%;
 
+        margin:0 auto;
 
-    font-size:.75rem;
+    }
 
+    #experience .panelRight{
 
+        display:none;
 
-    color:#777;
-
-
-
-    margin-top:3px;
-
-
-
-}
-
-#experience .skillStats h4{
-
-
-
-    font-size:1rem;
-
-
-
-    font-weight:700;
-
-
-
-    color:#111;
-
-
-
-    line-height:1;
-
-
-
-    margin:0;
-
-
+    }
 
 }
 
-#experience .skillStats div:hover{
+@media(max-width:768px){
 
+    #experience{
 
+        padding:100px 5%;
 
-    transform:translateY(-4px);
+    }
 
+    #experience .skillsHeader h2{
 
+        font-size:2.3rem;
 
-    box-shadow:
+    }
 
-        0 15px 30px rgba(0,0,0,.12);
+    #experience .skillPanel{
 
+        padding:28px;
 
+    }
 
-}
+    #experience #experienceTitle{
 
- #experience .skillStats{
+        font-size:1.6rem;
 
+    }
 
+    #experience .skillStats{
 
-    display:flex;
+        flex-wrap:wrap;
 
+    }
 
+    #experience .skillStats div{
 
-    gap:14px;
+        min-width:calc(50% - 7px);
 
+    }
 
+    #experience .navItem{
 
-    margin-top:18px;
+        padding:10px 16px;
 
+        font-size:.78rem;
 
-
-}
-
-#experience .skillStats div{
-
-
-
-    flex:1;
-
-
-
-    display:flex;
-
-
-
-    align-items:center;
-
-
-
-    gap:12px;
-
-
-
-    padding:14px 18px;
-
-
-
-    border-radius:50px;
-
-
-
-    background:rgba(255,255,255,.75);
-
-
-
-    backdrop-filter:blur(15px);
-
-
-
-    border:1px solid rgba(0,0,0,.08);
-
-
-
-    box-shadow:
-
-        0 8px 18px rgba(0,0,0,.06);
-
-
-
-    transition:.35s;
-
-
+    }
 
 }

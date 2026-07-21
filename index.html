@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sidharth Kumar — Full-stack &amp; Android developer building web apps, Flutter apps, REST APIs and applied AI/ML systems.">
 
-    <title>Sidharth Kumar | Portfolio</title>
+    <title>Sidharth Kumar | Software Engineer</title>
 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/animationUP.css">
     <link rel="stylesheet" href="./styles/exp.css">
     <link rel="stylesheet" href="./styles/skill.css">
-
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/contact.css">
 
     <link rel="icon" type="image/png" href="./assets/cv.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,213 +26,269 @@
     <div class="bgGlow glow1"></div>
     <div class="bgGlow glow2"></div>
 
-    <nav>
-
-        <div class="logo">
-            <span>Sidharth</span> Kumar
-        </div>
-
-        <ul>
-
-            <li><a href="#" class="active" id="Ani_UP">Home</a></li>
-            <li><a href="#" id="Ani_UP">About</a></li>
-            <li><a href="#" id="Ani_UP">Skills</a></li>
-            <li><a href="#" id="Ani_UP">Projects</a></li>
-            <li><a href="#" id="Ani_UP">Contact</a></li>
-
-        </ul>
-
-    </nav>
+    <!-- ================= 3D MODEL LAYER (fixed, do not reposition) ================= -->
 
     <div class="modelDiv">
-        <spline-viewer class="model" url="https://prod.spline.design/OslxT7Ingn6seDYx/scene.splinecode"></spline-viewer>
+        <spline-viewer class="model" url="https://prod.spline.design/OslxT7Ingn6seDYx/scene.splinecode" loading-anim-type="none"></spline-viewer>
     </div>
 
+    <!-- ================= NAV ================= -->
 
-    <div class="scrollDown">
+    <header class="siteHeader">
 
-        <span>Scroll Down</span>
+        <nav class="nav" aria-label="Primary">
 
-        <div class="mouse">
-            <div class="wheel"></div>
-        </div>
-
-    </div>
-
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
-    <!-- Huge Background Text -->
-
-    <div class="bgTitle">
-        DEVELOPER
-    </div>
-
-    <div class="heroContent">
-
-        <span class="tag" id="TextChange" id="Ani_UP">
-            
-        </span>
-
-        <h1 id="Ani_UP">
-            Sidharth Kumar
-        </h1>
-
-        <h2 id="TextChange">
-        </h2>
-
-        <p id="Ani_UP"></p>
-
-            I build responsive websites, Flutter applications,
-            REST APIs and interactive 3D experiences using
-            modern technologies.
-
-        </p>
-
-        <div class="buttons" id="Ani_UP">
-
-            <a href="#" class="btn primary">
-                View Projects
+            <a href="#home" class="logo">
+                <span>Sidharth</span> Kumar
             </a>
 
-            <a href="#" class="btn secondary">
-                Download CV
-            </a>
+            <button class="navToggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-        </div>
+            <ul class="navLinks" id="navLinks">
+                <li><a href="#home" class="navLink active" data-nav="home">Home</a></li>
+                <li><a href="#experience" class="navLink" data-nav="experience">Experience</a></li>
+                <li><a href="#work" class="navLink" data-nav="work">Work</a></li>
+                <li><a href="#contact" class="navLink" data-nav="contact">Contact</a></li>
+            </ul>
 
-        <div class="stats" id="Ani_UP">
+            <a href="#contact" class="btn primary navCta">Let's Talk</a>
 
-            <div>
-                <h3>15+</h3>
-                <span>Projects</span>
+        </nav>
+
+    </header>
+
+    <main>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="bgTitle" aria-hidden="true">DEVELOPER</div>
+
+        <div class="heroContent">
+
+            <span class="tag reveal-up" id="heroTag">
+                <span class="tagDot" aria-hidden="true"></span>
+                Open to internships &amp; freelance
+            </span>
+
+            <h1 class="reveal-up" style="animation-delay:1.1s;">
+                Sidharth Kumar
+            </h1>
+
+            <h2 class="heroRole" id="TextChange" aria-live="polite"></h2>
+
+            <p class="heroText reveal-up" style="animation-delay:1.3s;">
+                I build responsive websites, Flutter applications,
+                REST APIs and interactive 3D experiences using
+                modern technologies.
+            </p>
+
+            <div class="buttons reveal-up" style="animation-delay:1.4s;">
+
+                <a href="#work" class="btn primary">
+                    View Projects
+                </a>
+
+                <a href="./assets/resume.pdf" class="btn secondary" download>
+                    Download CV
+                </a>
+
             </div>
 
-            <div>
-                <h3>10+</h3>
-                <span>Technologies</span>
-            </div>
+            <div class="stats reveal-up" style="animation-delay:1.5s;">
 
-            <div>
-                <h3>4+</h3>
-                <span>Internship<br>
-                    & Freeleance</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--===================== EXPERIENCE =====================-->
-
-<section class="skills" id="experience">
-
-    <div class="skillsContainer">
-
-        <!-- Heading -->
-
-        <div class="skillsHeader">
-
-            <h2>Experience</h2>
-
-            <!-- <p>
-                My professional journey through internships, freelancing,
-                leadership roles and technical contributions.
-            </p> -->
-
-        </div>
-
-
-        <!--===================== GLASS PANEL =====================-->
-
-        <div class="skillPanel">
-
-            <!--===================== LEFT =====================-->
-
-            <div class="panelLeft">
-
-                <!-- Badge -->
-
-                <div class="skillBadge">
-
-                    <span id="experienceType">
-
-                        Professional Experience
-
-                    </span>
-
+                <div>
+                    <h3>15+</h3>
+                    <span>Projects</span>
                 </div>
 
-                <!-- Title -->
+                <div>
+                    <h3>10+</h3>
+                    <span>Technologies</span>
+                </div>
 
-                <h3 id="experienceTitle">
+                <div>
+                    <h3>4+</h3>
+                    <span>Internship &amp; Freelance</span>
+                </div>
 
-                    Android Development Intern
+            </div>
 
-                </h3>
+        </div>
 
-                <!-- Company -->
+        <div class="scrollDown">
 
-                <h4 id="experienceCompany">
+            <span>Scroll Down</span>
 
-                    Google for Developers
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
 
-                </h4>
+        </div>
 
-                <!-- Description -->
+    </section>
 
-                <p id="experienceDescription">
+   
+    <!--===================== EXPERIENCE =====================-->
 
-                    Built Android applications using modern UI principles,
-                    integrated REST APIs, and completed the official Google
-                    for Developers Android Development Program through
-                    hands-on learning.
+    <section class="skills" id="experience">
 
+        <div class="skillsContainer">
+
+            <!-- Heading -->
+
+            <div class="skillsHeader">
+
+                <span class="eyebrow">Career</span>
+
+                <h2>Experience</h2>
+
+                <p>
+                    A track record of internships, freelance work and leadership
+                    roles that combine software engineering with applied AI and
+                    security.
                 </p>
 
-
-                <!-- Technologies -->
-
-                <div class="techStack" id="experienceTags">
-
-                    <span>Android</span>
-
-                    <span>Java</span>
-
-                    <span>REST API</span>
-
-                    <span>UI Design</span>
-
-                    <span>Google</span>
-
-                </div>
+            </div>
 
 
-                <!-- Duration -->
+            <!--===================== GLASS PANEL =====================-->
 
-                <div class="skillLevel">
+            <div class="skillPanel">
 
-                    <div class="levelHeader">
+                <!--===================== LEFT =====================-->
 
-                        <span>Duration</span>
+                <div class="panelLeft">
 
-                        <span id="experienceDuration">
+                    <!-- Badge -->
 
-                            Jul 2024 – Sep 2024
+                    <div class="skillBadge">
+
+                        <span id="experienceType">
+
+                            Professional Experience
 
                         </span>
 
                     </div>
 
-                    <div class="progressBar">
+                    <!-- Title -->
 
-                        <div
-                            class="progress"
-                            id="progressBar"
-                            style="width:75%;">
+                    <h3 id="experienceTitle">
+
+                        Android Development Intern
+
+                    </h3>
+
+                    <!-- Company -->
+
+                    <h4 id="experienceCompany">
+
+                        Google for Developers
+
+                    </h4>
+
+                    <!-- Description -->
+
+                    <p id="experienceDescription">
+
+                        Built Android applications using modern UI principles,
+                        integrated REST APIs, and completed the official Google
+                        for Developers Android Development Program through
+                        hands-on learning.
+
+                    </p>
+
+
+                    <!-- Technologies -->
+
+                    <div class="techStack" id="experienceTags">
+
+                        <span>Android</span>
+
+                        <span>Java</span>
+
+                        <span>REST API</span>
+
+                        <span>UI Design</span>
+
+                        <span>Google</span>
+
+                    </div>
+
+
+                    <!-- Duration -->
+
+                    <div class="skillLevel">
+
+                        <div class="levelHeader">
+
+                            <span>Duration</span>
+
+                            <span id="experienceDuration">
+
+                                Jul 2024 – Sep 2024
+
+                            </span>
+
+                        </div>
+
+                        <div class="progressBar">
+
+                            <div
+                                class="progress"
+                                id="progressBar"
+                                style="width:75%;">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Stats -->
+
+                    <div class="skillStats">
+
+                        <div>
+
+                            <h4 id="experienceStat1">
+
+                                Intern
+
+                            </h4>
+
+                            <span>Role</span>
+
+                        </div>
+
+                        <div>
+
+                            <h4 id="experienceStat2">
+
+                                Android
+
+                            </h4>
+
+                            <span>Domain</span>
+
+                        </div>
+
+                        <div>
+
+                            <h4 id="experienceStat3">
+
+                                2024
+
+                            </h4>
+
+                            <span>Year</span>
 
                         </div>
 
@@ -239,43 +297,21 @@
                 </div>
 
 
-                <!-- Stats -->
+                <!--===================== RIGHT =====================-->
 
-                <div class="skillStats">
+                <div class="panelRight">
 
-                    <div>
+                    <div class="floatingCircle circle1"></div>
 
-                        <h4 id="experienceStat1">
+                    <div class="floatingCircle circle2"></div>
 
-                            Intern
+                    <div id="experienceLogo">
 
-                        </h4>
-
-                        <span>Role</span>
-
-                    </div>
-
-                    <div>
-
-                        <h4 id="experienceStat2">
-
-                            Android
-
-                        </h4>
-
-                        <span>Domain</span>
-
-                    </div>
-
-                    <div>
-
-                        <h4 id="experienceStat3">
-
-                            2024
-
-                        </h4>
-
-                        <span>Year</span>
+                        <img
+                        id="experienceLogoImg"
+                        src="./assets/google.png"
+                        alt="Company logo"
+                    >
 
                     </div>
 
@@ -284,306 +320,361 @@
             </div>
 
 
-            <!--===================== RIGHT =====================-->
+            <!--===================== TIMELINE =====================-->
 
-            <div class="panelRight">
+            <div class="skillsNav" id="experienceNav">
 
-                <div class="floatingCircle circle1"></div>
+                <button class="navItem active"
+                        data-id="google">
 
-                <div class="floatingCircle circle2"></div>
+                    <span></span>
 
-                <div id="experienceLogo">
+                    Google for Developers
 
-                    
-    <img
-    id="experienceLogoImg"
-    src="./assets/google.png"
-    alt=""
->
+                </button>
 
 
-                </div>
+                <button class="navItem"
+                        data-id="ISA">
+
+                    <span></span>
+
+                    Indian Space Agnency
+
+                </button>
+
+
+                <button class="navItem"
+                        data-id="servicenow">
+
+                    <span></span>
+
+                    ServiceNow × AICTE
+
+                </button>
+
+
+                <button class="navItem"
+                        data-id="booksopedia">
+
+                    <span></span>
+
+                    BooksOpedia
+
+                </button>
+
+
+                <button class="navItem"
+                        data-id="booksaarika">
+
+                    <span></span>
+
+                    BookswithAartika
+
+                </button>
+
+                <button class="navItem"
+                        data-id="ChiefProgrammer">
+
+                    <span></span>
+
+                    Chief Programmer x AITM
+                </button>
+
+                <button class="navItem"
+                        data-id="BinaryBrains">
+
+                    <span></span>
+
+                    Head of Binary Brains Society
+                </button>
+
+                <button class="navItem"
+                data-id="Ecell">
+
+                    <span></span>
+
+                    Head of Cyber Innovation
+                </button>
 
             </div>
 
         </div>
 
-
-        <!--===================== TIMELINE =====================-->
-
-        <div class="skillsNav" id="experienceNav">
-
-            <button class="navItem active"
-                    data-id="google">
-
-                <span></span>
-
-                Google for Developers
-
-            </button>
+    </section>
 
 
-            <button class="navItem"
-                    data-id="ISA">
+    <!--===================== WORK (SKILLS + PROJECTS) =====================-->
 
-                <span></span>
+    <section class="sskill" id="work">
 
-                Indian Space Agnency
-
-            </button>
-
-
-            <button class="navItem"
-                    data-id="servicenow">
-
-                <span></span>
-
-                ServiceNow × AICTE
-
-            </button>
-
-
-            <button class="navItem"
-                    data-id="booksopedia">
-
-                <span></span>
-
-                BooksOpedia
-
-            </button>
-
-
-            <button class="navItem"
-                    data-id="booksaarika">
-
-                <span></span>
-
-                BookswithAartika
-
-            </button>
-
-            <button class="navItem"
-                    data-id="ChiefProgrammer">
-
-                <span></span>
-
-                Chief Programmer x AITM
-            </button>
-
-            <button class="navItem"
-                    data-id="BinaryBrains">
-
-                <span></span>
-
-                Head of Binary Brains Society
-            </button>
-
-            <button class="navItem"
-            data-id="Ecell">
-
-        <span></span>
-
-        Head of Cyber Innovation
-    </button>
-
+        <div class="workHeader reveal-up">
+            <span class="eyebrow">Selected Work</span>
+            <h2>Projects &amp; Technical Skills</h2>
         </div>
 
-    </div>
+        <!--================ LEFT =================-->
+        <div class="skillLeft">
 
-</section>
+            <!-- Selected Project Overview -->
+            <div class="skillOverview">
 
-
-<section class="sskill" id="skillsSection">
-
-    <!--================ LEFT =================-->
-    <div class="skillLeft">
-
-        <!-- Selected Project Overview -->
-        <div class="skillOverview">
-
-            <div class="skillBadgeNew">
-                <span id="skillCategory">
-                    Full Stack Development
-                </span>
-            </div>
-
-            <h2 id="skillTitle">
-                Web Development
-            </h2>
-
-            <div class="skillProgressBox">
-
-                <div class="progressHead">
-                    <span>Mastery</span>
-                    <span id="skillPercentage">
-                        90%
+                <div class="skillBadgeNew">
+                    <span id="skillCategory">
+                        Full Stack Development
                     </span>
                 </div>
 
-                <div class="skillProgressBar">
-                    <div
-                        class="skillProgressFill"
-                        id="skillProgressFill"
-                        style="width:90%;">
+                <h2 id="skillTitle">
+                    Web Development
+                </h2>
+
+                <div class="skillProgressBox">
+
+                    <div class="progressHead">
+                        <span>Mastery</span>
+                        <span id="skillPercentage">
+                            90%
+                        </span>
                     </div>
+
+                    <div class="skillProgressBar">
+                        <div
+                            class="skillProgressFill"
+                            id="skillProgressFill"
+                            style="width:90%;">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="skillNavigation projectNavList">
+
+                <button class="skillButton activeSkill"
+                        data-project="guardianAngelApp">
+                    <span></span>
+                    Guardian Angel (App)
+                </button>
+
+                <button class="skillButton"
+                data-project="knifeNGun">
+                    <span></span>
+                    knifeNGun
+                </button>
+
+                <button class="skillButton"
+                        data-project="madhava">
+                    <span></span>
+                    Madhava
+                </button>
+
+                <button class="skillButton"
+                        data-project="weatherForecast">
+                    <span></span>
+                    Weather Forecast
+                </button>
+
+                <button class="skillButton"
+                        data-project="knifeNGunApp">
+                    <span></span>
+                    KnifeNGunApp
+                </button>
+
+                <button class="skillButton"
+                        data-project="storyGame">
+                    <span></span>
+                    Story Game
+                </button>
+
+                <button class="skillButton"
+                        data-project="yumBook">
+                    <span></span>
+                    YumBook
+                </button>
+
+                <button class="skillButton"
+                        data-project="speechSync">
+                    <span></span>
+                    Speech Sync
+                </button>
+
+                <button class="skillButton"
+                        data-project="dineExpress">
+                    <span></span>
+                    DineExpress
+                </button>
+
+                <button class="skillButton"
+                        data-project="textToSpeech">
+                    <span></span>
+                    TextToSpeech
+                </button>
+
+                <button class="skillButton "
+                        data-project="guardianAngelWeb">
+                    <span></span>
+                    Guardian Angel
+                </button>
+
+                <button class="skillButton"
+                        data-project="booksopedia">
+                    <span></span>
+                    Booksopedia
+                </button>
+
+                <button class="skillButton"
+                        data-project="securityToolkit">
+                    <span></span>
+                    Security Toolkit
+                </button>
+
+                
+
+            </div>
+
+        </div>
+
+
+        <!--================ RIGHT =================-->
+        <div class="skillRight">
+
+            <!-- Technology Tags for selected project -->
+            <div class="technologyPanel">
+                <div id="technologyList">
+                </div>
+            </div>
+
+            <!-- Project Card -->
+            <div class="projectCard">
+
+                <div class="projectHeader">
+                    <h2 id="projectTitle">
+                        Guardian Angel
+                    </h2>
+                </div>
+
+                <div class="projectImage">
+                    <img
+                        id="projectImage"
+                        src="./assets/ga.png"
+                        alt="Project screenshot">
+                </div>
+
+                <p id="projectDescription">
+                    Emergency response platform with AI powered assistance.
+                </p>
+
+                <div class="projectButtons">
+
+                    <a
+                        id="visitProject"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        class="visitProject" >
+                        Visit
+                    </a>
+
+                    <a
+                        id="githubProject"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        class="githubProject">
+                        <span>GitHub</span>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            viewBox="0 0 16 16"
+                            aria-hidden="true">
+                            <path d="M8 0C3.58 0 0 3.58 0 8a8.013 8.013 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.33c-2.23.49-2.7-1.08-2.7-1.08-.37-.94-.9-1.2-.9-1.2-.73-.5.05-.49.05-.49.81.06 1.24.83 1.24.83.72 1.23 1.89.87 2.35.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82A7.54 7.54 0 0 1 8 3.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.14.46.55.38A8.014 8.014 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                    </a>
+
                 </div>
 
             </div>
 
         </div>
 
-        <div class="skillNavigation projectNavList">
+    </section>
 
-            <button class="skillButton"
-                    data-project="guardianAngelApp">
-                <span></span>
-                Guardian Angel (App)
-            </button>
-
-            <button class="skillButton"
-                    data-project="madhava">
-                <span></span>
-                Madhava
-            </button>
-
-            <button class="skillButton"
-                    data-project="weatherForecast">
-                <span></span>
-                Weather Forecast
-            </button>
-
-            <button class="skillButton"
-                    data-project="knifeNGunApp">
-                <span></span>
-                KnifeNGunApp
-            </button>
-
-            <button class="skillButton"
-                    data-project="storyGame">
-                <span></span>
-                Story Game
-            </button>   
-            
-            <button class="skillButton"
-                    data-project="yumBook">
-                <span></span>
-                YumBook
-            </button>
-
-            <button class="skillButton"
-                    data-project="speechSync">
-                <span></span>
-                Speech Sync
-            </button>
-
-            <button class="skillButton"
-                    data-project="dineExpress">
-                <span></span>
-                DineExpress
-            </button>
-
-            <button class="skillButton"
-                    data-project="textToSpeech">
-                <span></span>
-                TextToSpeech
-            </button>
-
-            <button class="skillButton activeSkill"
-                    data-project="guardianAngelWeb">
-                <span></span>
-                Guardian Angel
-            </button>
-
-            <button class="skillButton"
-                    data-project="booksopedia">
-                <span></span>
-                Booksopedia
-            </button>
-
-            <button class="skillButton"
-                    data-project="securityToolkit">
-                <span></span>
-                Security Toolkit
-            </button>
-
-            <button class="skillButton"
-            data-project="knifeNGun">
-        <span></span>
-        knifeNGun
-    </button>
-
-        </div>
-
-    </div>
+    <!--===================== CONTACT =====================-->
 
 
-    <!--================ RIGHT =================-->
-    <div class="skillRight">
+    <section class="contact" id="contact">
 
-        <!-- Technology Tags for selected project -->
-        <div class="technologyPanel">
-            <div id="technologyList">
-            </div>
-        </div>
-
-        <!-- Project Card -->
-        <div class="projectCard">
-
-            <div class="projectHeader">
-                <h2 id="projectTitle">
-                    Guardian Angel
-                </h2>
-            </div>
-
-            <div class="projectImage">
-                <img
-                    id="projectImage"
-                    src="./assets/ga.png"
-                    alt="Project">
-            </div>
-
-            <p id="projectDescription">
-                Emergency response platform with AI powered assistance.
+        <div class="contactLeft">
+            <span class="eyebrow">Contact</span>
+    
+            <h2>Let's Build<br>Something Great.</h2>
+    
+            <p>
+                Open to internships, freelance projects,
+                AI/ML and full stack collaborations.
             </p>
+    
+            <a href="mailto:sskumar20sign@gmail.com" class="btn primary">Let's Talk</a>
+        </div>
+    
+        
 
-            <div class="projectButtons">
+        <div class="contactRight">
 
-                <a
-                    id="visitProject"
-                    href="#"
-                    target="_blank"
-                    class="visitProject" >
-                    Visit
-                </a>
-
-                <a 
-                    id="githubProject"
-                    href="#"
-                    target="_blank"
-                    class="githubProject">
-                    <span>GitHub</span>
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8a8.013 8.013 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.33c-2.23.49-2.7-1.08-2.7-1.08-.37-.94-.9-1.2-.9-1.2-.73-.5.05-.49.05-.49.81.06 1.24.83 1.24.83.72 1.23 1.89.87 2.35.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.58.82-2.14-.08-.2-.36-1.01.08-2.1 0 0 .67-.21 2.2.82A7.54 7.54 0 0 1 8 3.8c.68 0 1.36.09 2 .27 1.53-1.03 2.2-.82 2.2-.82.44 1.09.16 1.9.08 2.1.51.56.82 1.27.82 2.14 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.14.46.55.38A8.014 8.014 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                </a>
-
+            <h4>Connect With Me</h4>
+            <a href="https://github.com/SSKumar-21" target="_blank">
+            <div class="contactCard">
+                <span>GitHub</span>
+                
+                    SSKumar
+                
+            </div></a>
+        <a href="https://www.linkedin.com/in/sidharth-kumar-059269294/" target="_blank"></a>
+            <div class="contactCard">
+                <span>LinkedIn</span>
+                
+                    SIDHARTH KUMAR
+               
+            </div> </a>
+            <a href="https://leetcode.com/u/SSKumar-21/" target="_blank">
+        
+            <div class="contactCard">
+                <span>LeetCode</span>
+                    SSKumar
             </div>
+        </a>
 
+        <a href="mailto:sskumar20sign@gmail.com"></a>
+            <div class="contactCard">
+                <span>Email</span>
+                
+                    SIDHARTH KUMAR
+            </div>
+        </a>
+        
         </div>
 
-    </div>
 
-</section>
 
+       
+    
+    </section>
+
+    </main>
+
+    <footer class="siteFooter">
+        
+        <p>&copy; 2026 Sidharth Kumar. All rights reserved.</p>
+    </footer>
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.98/build/spline-viewer.js"></script>
     <script src="./script/textChange.js"></script>
     <script src="./script/index.js"></script>
     <script src="./script/pro.js"></script>
+    <script src="./script/main.js"></script>
 </body>
 </html>
