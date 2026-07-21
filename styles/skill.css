@@ -141,16 +141,15 @@
 ===========================*/
 
 .skillNavigation{
-
     display:flex;
-
     flex-direction:column;
-
     gap:18px;
     margin-top: 40px;
     margin-left: 20px;
     z-index: 1000;
-
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 
@@ -514,3 +513,5 @@
     color: #fff;
     border-color: #111;
 }
+
+
