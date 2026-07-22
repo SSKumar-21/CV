@@ -61,7 +61,7 @@
 
     line-height:1.8;
 
-    color:var(--ink);
+    color:var(--ink-soft);
 
 }
 
@@ -180,7 +180,7 @@
 
     font-weight:700;
 
-    color:var(--ink);
+    color:var(--ink-soft);
 
     line-height:1.2;
 
@@ -363,7 +363,7 @@
 
     border-radius:var(--radius-md);
 
-    background:#fff;
+    background: linear-gradient(135deg,  var(--ink-soft) 0%,var(--accent) 100%);;
 
     border:1px solid var(--border);
 
@@ -399,7 +399,7 @@
 
     display:block;
 
-    color:var(--muted);
+    color:var(--ink);
 
     font-size:.76rem;
 
@@ -493,7 +493,7 @@
 
     height:170px;
 
-    background:rgba(255,255,255,.9);
+    background:var(--border-strong);
 
     backdrop-filter:blur(25px);
 
@@ -760,9 +760,11 @@
 
     transform:translateY(-4px);
 
-    box-shadow:var(--shadow-md);
+    box-shadow:var(--accent-soft);
 
-    color:var(--ink);
+    background:var(--accent-soft) ;
+
+    color:var(--ink-soft);
 
 }
 
