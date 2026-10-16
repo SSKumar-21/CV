@@ -377,7 +377,7 @@ body::before{
     font-size:12.5vw;
     font-weight:800;
     letter-spacing:-6px;
-    color:var(--ink);
+    color:var(--muted);
     opacity:.05;
     user-select:none;
     white-space:nowrap;

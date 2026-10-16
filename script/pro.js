@@ -1,5 +1,29 @@
 const projectsData = {
 
+    railNexus: {
+        category: "AI/ML & Full Stack Development",
+        title: "RailNexus",
+        progress: 90,
+        name: "RailNexus",
+        image: "./assets/railnexus.png",
+        description: "AI-powered railway maintenance block planning system that optimizes maintenance windows, prioritizes safety-critical requests, checks weather conditions, and dynamically reroutes trains to reduce operational disruptions.",
+        visit: "https://github.com/Team-Project-122/RailSmart.git",
+        github: "https://github.com/Team-Project-122/RailSmart.git",
+        technologies: [ "React", "Python",  "FastAPI", "PostgreSQL", "AI/ML", "Graph Algorithms", "REST API"]
+    },
+
+    railSmart: {
+        category: "AI/ML & Full Stack Development",
+        title: "RailSmart",
+        progress: 80,
+        name: "RailSmart",
+        image: "./assets/railsmart.png",
+        description: "AI-assisted train traffic control and decision-support system that detects railway conflicts, generates three explainable resolution strategies, simulates cascading delays, and applies weather-based speed restrictions using live train and weather data.",
+        visit: "https://github.com/Team-Project-122/RailSmart.git",
+        github: "https://github.com/Team-Project-122/RailSmart.git",
+        technologies: [ "React", "Node.js",  "Python", "FastAPI", "SQLite", "Socket.IO", "REST API", "Graph Algorithms" ]
+    },
+
     guardianAngelWeb:{
         category:"Full Stack Development",
         title:"Guardian Angel",
@@ -295,4 +319,4 @@ skillButtons.forEach(button=>{
                 DEFAULT
 ==================================================*/
 
-loadProject("guardianAngelWeb");
+loadProject("railNexus");
